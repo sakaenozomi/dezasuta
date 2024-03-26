@@ -33,6 +33,7 @@ ul {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 li {
     background-color: #fff;
@@ -42,6 +43,7 @@ li {
 }
 p {
     line-height: 25px;
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 400px) {
