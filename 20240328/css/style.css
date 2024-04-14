@@ -182,8 +182,38 @@ body {
         font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
             "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     }
+    #title h1 {
+        font-size: 38px;
+    }
+
+    /*パソコンで見たときは"pc"のclassがついた画像が表示される*/
+    .pc_img {
+        display: block !important;
+    }
+    .sp_img {
+        display: none !important;
+    }
 }
-/* コンテンツ */
+
+@media screen and (max-width: 767px) {
+    .pc_img {
+        display: none !important;
+    }
+    .sp_img {
+        display: block !important;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu_item img {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+/* ---------- コンテンツ ----------*/
 #content {
     text-align: center;
 }
@@ -213,7 +243,7 @@ body {
     letter-spacing: 0.1em;
     padding-bottom: 90px;
 }
-
+/* ---------- アバウト ----------*/
 .about {
     display: flex;
     justify-content: space-between;
@@ -255,16 +285,15 @@ body {
 .about_text img {
     max-width: 270px;
 }
-/* メニュー */
+
+/* ---------- メニュー ---------- */
 .menu img {
     margin: 0 auto;
 }
 .menu {
     display: flex;
     margin: 0 auto;
-    padding-right: 10px;
-    padding-left: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1000px;
 }
 
@@ -297,10 +326,10 @@ body {
     font-size: 17px;
     text-align: left;
     display: block;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
-/* ギャラリー */
+/* ---------- ギャラリー ---------- */
 
 #gallery {
     width: 100%;
@@ -313,9 +342,10 @@ body {
 }
 .gallery_items {
     display: flex;
+    width: 100%;
 }
 
-/* イベント */
+/* ---------- イベント ---------- */
 .event_title img {
     max-width: 170px;
     padding-bottom: 40px;
@@ -330,7 +360,6 @@ body {
     border: #4f260b 3px solid;
     background: #fff;
     max-width: 1000px;
-    height: 200px;
     margin: 0 auto;
     padding: 40px 160px;
 }

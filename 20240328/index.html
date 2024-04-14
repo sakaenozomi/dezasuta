@@ -12,10 +12,14 @@
 <body>
     <header id="header">
         <div class="header_slider">
-            <img src="./images/pc_first-100.jpg" alt="店内の様子">
+            <div>
+                <picture>
+                    <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/pc_first-100.jpg" alt="デザインカフェ 店内の様子">
+                </picture>
+            </div>
         </div>
         <div class="header_wrap">
-
             <h1>
                 <img src="./images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE">
             </h1>
@@ -45,6 +49,7 @@
         </div>
     </header>
     <div id="content">
+
         <div id="title" class="content_box">
             <h3>Have a happy day From a cup of coffee.</h3>
             <h1>ハッピーに溢れる1日を
@@ -58,7 +63,8 @@
 
         <section id="about" class="about content_box">
             <div class="about_img">
-                <img src="images/pc_about-100.jpg" alt="乾杯">
+                <img class=pc_img src="images/pc_about-100.jpg" alt="乾杯">
+                <img class=sp_img src="images/about_us@2x-100.jpg" alt="乾杯">
             </div>
             <div class="about_text">
                 <h2>
@@ -190,6 +196,50 @@
         </div>
     </div>
     <script>
+        // $(function () {
+        //ダラーファンクション 
+        //ここの中に記述 bodyタグの一番下に記述
+        //     $('h1').css('cilor,#f000')
+        // . メソット 対象のcssを変える 
+        // });
+
+
+        // $(function () {
+        //     $('.heading').hide()
+        // heid隠す
+        // ()スピード
+        // (slow)ゆっくり隠す
+        // (3000)３秒かけて隠す（ミリ秒で表示）
+        // });
+
+
+        // イベント いつどのタイミングで発動するのか
+
+        // addClas クラスの追加
+        // $('btn').on('click', function () {
+        //     $('heading').addClass('color');
+        // })
+        // ボタンがクリックされたタイミングで色が変わる
+        // 押したらそのまま
+
+        // toggleClass
+        // $('btn').on('click', function () {
+        //     $('heading').toggleClass('color');
+        // })
+        // つけたり消えたりする
+
+        // toggleClass
+        // $('btn').on('click', function () {
+        //     $('heading').toggleClass('color');
+        // $('.heading').hide(1000);
+        // })
+        // １秒かけて消える
+        // 数字を書くときはシングルコーテーション'いらない'
+
+        // $('.heading').headToggle(1000);
+        // １秒かけてふわっとフェードアウトする
+        // もう一回押すとふわっとフェードインする
+
 
         $(function () {
             $('.sp_btn').on('click', function () {
@@ -197,6 +247,8 @@
                 $('.sp_btn').toggleClass('open');
             })
         });
+
+
     </script>
 </body>
 
