@@ -25,6 +25,7 @@ li {
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
         "ＭＳ 明朝", serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -187,20 +188,20 @@ body {
     }
 
     /*パソコンで見たときは"pc"のclassがついた画像が表示される*/
-    .pc_img {
-        display: block !important;
-    }
-    .sp_img {
+    /* .sp_img {
         display: none !important;
     }
+    .pc_img {
+        display: block !important;
+    } */
 }
 
 @media screen and (max-width: 767px) {
     .pc_img {
-        display: none !important;
+        display: none;
     }
     .sp_img {
-        display: block !important;
+        display: block;
     }
 
     .menu {
@@ -208,6 +209,7 @@ body {
         align-items: center;
     }
     .menu_item img {
+        max-width: 300px;
         margin: 0 auto;
         text-align: center;
     }
@@ -258,6 +260,14 @@ body {
     border-bottom-right-radius: 80px;
 }
 
+/*パソコンで見たときは"pc"のclassがついた画像が表示される*/
+.sp_img {
+    display: none;
+}
+.pc_img {
+    display: block;
+}
+
 .about h2 {
     width: 41%;
     padding-top: 75px;
@@ -295,6 +305,7 @@ body {
     margin: 0 auto;
     justify-content: space-between;
     max-width: 1000px;
+    padding: 0 10px;
 }
 
 .menu_title img {
@@ -327,6 +338,7 @@ body {
     text-align: left;
     display: block;
     padding-top: 40px;
+    line-height: 1.47;
 }
 
 /* ---------- ギャラリー ---------- */
@@ -386,7 +398,7 @@ iframe {
     display: block;
 }
 
-/* フッター */
+/*---------- フッター ----------*/
 #footer {
     background: #fff;
     max-width: 100%;
@@ -396,18 +408,17 @@ iframe {
     height: 40px;
 }
 
+.footer_item p {
+    line-height: 1.9;
+}
+
 .footer_item {
-    padding-top: 80px;
-    padding-left: 400px;
-    padding-bottom: 70px;
-    max-width: 1000px;
-    justify-content: start;
+    padding: 80px 0 70px 0;
+    width: 1000px;
+    justify-content: center;
     margin: 0 auto;
     display: flex;
     gap: 35px;
-}
-.footer_item p {
-    line-height: 1.9;
 }
 
 .copyrigtht {
