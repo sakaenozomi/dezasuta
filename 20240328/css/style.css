@@ -50,7 +50,7 @@ ul {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     vertical-align: bottom;
     border: none;
 }
@@ -201,16 +201,60 @@ body {
     }
 
     .about_text h3 {
-        padding-top: 36px;
+        font-size: 36px;
     }
+}
+/*ストライダー*/
+.slick-dots {
+    bottom: 20px;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+    font-size: 14px;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+}
+/* ギャラリーのスライド */
+.slick-prev {
+    left: 22%;
+    z-index: 99;
+}
+.slick-prev:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    transform: rotate(-45deg);
+}
+
+.slick-next {
+    right: 22%;
+}
+
+.slick-next:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(45deg);
 }
 
 /* ---------- コンテンツ ----------*/
 #content {
     text-align: center;
+    width: 100%;
 }
 .content_box {
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
 }
 #content h2 {
@@ -223,6 +267,10 @@ body {
 }
 
 .title {
+    text-align: center;
+}
+#title {
+    max-width: 1000px;
     text-align: center;
 }
 .title h1 {
@@ -242,6 +290,7 @@ body {
 }
 /* ---------- アバウト ----------*/
 .about {
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -300,6 +349,7 @@ body {
     margin: 0 auto;
 }
 .menu {
+    max-width: 1000px;
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
@@ -321,7 +371,17 @@ body {
     padding-top: 80px;
     width: 30%;
     gap: 50px;
+}
+
+.menu_img {
     position: relative;
+}
+/*パソコンで見たときは"pc"のclassがついた画像が表示される*/
+.sp_img {
+    display: none;
+}
+.pc_img {
+    display: block;
 }
 
 .menu_item h3 {
@@ -332,7 +392,7 @@ body {
     justify-content: flex-start;
     top: 20%;
     position: absolute;
-    top: 65%;
+    top: 90%;
     left: 10px;
 }
 /* @media screen and (max-width: 995px) {
@@ -362,12 +422,17 @@ body {
 .pc_gallery_items {
     display: flex;
     width: 100%;
+    margin: 0 auto;
 }
 .sp_gallery_items {
     display: none;
+    width: 100%;
 }
 
 /* ---------- イベント ---------- */
+#event {
+    max-width: 1000px;
+}
 .event_title img {
     max-width: 170px;
     padding-bottom: 40px;
@@ -400,13 +465,24 @@ body {
 }
 
 #access {
+    width: 100%;
     margin: 0 auto;
-    max-width: 100%;
     text-align: center;
+}
+
+.access_map {
+    max-width: 100%;
+    height: auto; /* 画像の縦横比を保持するために必要 */
+
+    display: block; /* インライン要素の余白を除去するため */
+    width: 100%;
 }
 iframe {
     width: 100%;
+    margin: 0 auto;
     height: 470px;
+    width: 100%;
+    display: block;
 }
 
 /*---------- フッター ----------*/
@@ -517,11 +593,12 @@ iframe {
         font-size: 36px;
         text-align: left;
         padding-left: 20px;
+        box-sizing: border-box;
     }
 
     .about_text p {
         width: 90%;
-        margin: 0 20px;
+        margin: 0 10px;
         text-align: left;
         margin: 0 auto;
     }
@@ -546,14 +623,16 @@ iframe {
     .menu_item {
         padding-top: 15px;
     }
-
+    .sp_img {
+        display: block;
+    }
+    .pc_img {
+        display: none;
+    }
     .menu_item h3 {
         font-size: 40px;
         position: absolute;
-        top: 65%;
-        left: 6%;
     }
-
     .menu_text {
         padding-top: 30px;
         text-align: left;
@@ -562,10 +641,11 @@ iframe {
     /*---------- ギャラリー ----------*/
     .pc_gallery_items {
         display: none;
+        width: 100%;
     }
     .sp_gallery_items {
         display: block;
-        max-width: 100%;
+        width: 100%;
     }
 
     /*---------- イベント ----------*/
@@ -589,6 +669,7 @@ iframe {
         text-overflow: ellipsis;
         white-space: nowrap;
     }
+
     /*---------- フッター ----------*/
     .footer_item {
         flex-direction: column;
@@ -599,6 +680,7 @@ iframe {
     .footer_item img {
         max-width: 100%;
         text-align: start;
+        box-sizing: border-box;
         padding-left: 20px;
     }
     .footer_item p {
