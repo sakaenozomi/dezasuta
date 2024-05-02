@@ -130,7 +130,7 @@ body {
     height: 20px;
     border-top: 3px solid white;
     border-left: 3px solid white;
-    transform: rotate(-45deg);
+    transform: rotate(-45deg); /*回転させる*/
 }
 
 .slick-next {
@@ -144,7 +144,11 @@ body {
     height: 20px;
     border-top: 3px solid white;
     border-right: 3px solid white;
-    transform: rotate(45deg);
+    transform: rotate(45deg); /*回転させる*/
+}
+/*ligthboxで画像が表示された時にlbnumberを表示させない*/
+.lb-data .lb-number {
+    display: none !important; /*１番優先させる*/
 }
 
 /* ---------- コンテンツ ----------*/
