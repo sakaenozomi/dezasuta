@@ -11,11 +11,11 @@
 <body>
     <header id="header">
         <div class="header_wrap">
-            <nav class="pc_nav">
+            <nav class="pc_header_nav">
                 <ul>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#works">works</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li class="header_about"><a href="#about">about</a></li>
+                    <li class="header_works"><a href="./works.html">works</a></li>
+                    <li class="header_contact"><a href="#contact">contact</a></li>
                 </ul>
             </nav>
             <div class="sp_btn ">
@@ -29,17 +29,18 @@
                 </ul>
 
             </nav> -->
+
         </div>
 
     </header>
-    <div id="content">
+    <div id="contant">
         <div id="title">
             <h1 class="vertical-rl">海のように、深く。</h1>
             <div class="line"></div>
         </div>
-        <div id="consept" class="content_box">
-            <div class="consept_title">consept</div>
-            <div class="consept_subtitle">生まれ育った場所の海のように、<br>
+        <div id="concept" class="content_box">
+            <div class="concept_title">concept</div>
+            <div class="concept_subtitle">生まれ育った場所の海のように、<br>
                 お客さまに深く寄り添っていきます。</div>
             <div id="consept_text">
                 気づけばいつも訪れていた海のように。<br>
@@ -54,7 +55,7 @@
             <h3>わたしのこと</h3>
         </div>
         <div class="about_img"></div>
-        <img class="pc_img" src="/Users/nozomi/Desktop/sakae_concept/images/1x/アセット 13.png" alt="">
+        <img class="pc_img" src="/Users/nozomi/Desktop/dezasuta/sakae_concept/images/1x/アセット 13.png" alt="">
         <!-- <img class="sp_img" src="/Users/nozomi/Desktop/sakae_concept/images/1x/アセット 14.png" alt=""> -->
 
         <div class="name">
@@ -77,22 +78,23 @@
             人との繋がりをとても大事にしている環境で育ったからこそデザインを通して思いや願いを繋げていくお手<br>
             伝いができたらと思います。
         </p>
+
         <div class="profile">
-            <h4>Profile</h4>
-            <div class="about_text">【プロフィール】</div>
+            <div class="profile_title">Profile</div>
+            <div class="profile_subtitle">【プロフィール】</div>
         </div>
-        <ul class="profile_list">
+        <ul id="profile_list">
             <li>所在地 ・・・・・・ 大阪市内</li>
             <li>お問い合わせ ・・・ noozoomey@gmail.com</li>
             <li>事業内容 ・・・・・ Web制作におけるディレクション、デザイン、<br>
                 HTML・CSSコーディング、スマートフォンサイト</li>
         </ul>
+
         <div class="profile">
-            <h4>Skill</h4>
-            <div class="about_text">【スキル】
-            </div>
+            <div class="profile_title">Skill</div>
+            <div class="profile_subtitle">【スキル】</div>
         </div>
-        <ul>
+        <ul id="profile_list" class="skill">
             <li>・Illustrator</li>
             <li>・Photoshop</li>
             <li>・Figma</li>
@@ -105,21 +107,44 @@
 
 
     <div id="works" class="content_box">
-        <div class="title">
-            <h2>works</h2>
-            <h3 class="works_title">実　績</h3>
+        <div class="works">
+            <div class="title">
+                <h2 class="works">works</h2>
+                <h3 class="works_title">実　績</h3>
+            </div>
         </div>
-        <p id="works_text" class="text">
-            常にクラアントさまの視点に立ち、デザインを生み出すことを意識しています。<br>
-            価値観やらしさをしっかりと表現できるデザイナーを目指しています。
-        </p>
+    </div>
+    <p id="works_text" class="text">
+        常にクラアントさまの視点に立ち、デザインを生み出すことを意識しています。<br>
+        価値観やらしさをしっかりと表現できるデザイナーを目指しています。
+    </p>
 
-        <div class="container">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-
+    <div class="container">
+        <div class="works_box">
+            <div class="box_text">
+                <p class="box_title">飲食店バナーデザイン</p>
+                <p class="box_subtitle">#バナーデザイン</p>
+            </div>
         </div>
+        <div class="works_box">
+            <div class="box_text">
+                <p class="box_title">旅行メディアバナーデザイン</p>
+                <p class="box_subtitle">#バナーデザイン</p>
+            </div>
+        </div>
+        <div class="works_box">
+            <div class="box_text">
+                <p class="box_title">コワーキングスペースLPデザイン</p>
+                <p class="box_subtitle">#LPデザイン</p>
+            </div>
+        </div>
+        <div class="button">
+            <div class="works_button"></div>
+            <p class="button_text">
+                もっと見る
+            </p>
+        </div>
+
     </div>
 
     <div id="contact" class="content_box">
@@ -127,15 +152,86 @@
             <h2>Contact us</h2>
             <h3>お問い合わせ</h3>
         </div>
-        <div id="contact_text">
-            <p class="text">
-                「相談したい。」「話を聞いてみたい。」と思ってくださった方は<br>
-                下記メールフォームよりお問い合わせください。
-            </p>
-            <p class="sub_text">
-                以下のフォームに必要事項をご入力いただき、内容をご確認のうえ、<br>
-                送信ボタンを押してください。 ( ＊マークは必須項目です。)</p>
-        </div>
+    </div>
+    <div id="contact_text">
+        <p class="text">
+            「相談したい。」「話を聞いてみたい。」と思ってくださった方は<br>
+            下記メールフォームよりお問い合わせください。
+        </p>
+        <p class="contact_text">
+            以下のフォームに必要事項をご入力いただき、内容をご確認のうえ、<br>
+            送信ボタンを押してください。 ( ＊マークは必須項目です。)</p>
+
+        <p class="contact_subtext">＊は必須項目となります。</p>
+
+
+        <form class="c-form">
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-name">お名前＊<span class="c-form__required">必須</span></label>
+                <input class="c-form__input" id="field-name" placeholder="山田 花子" type="text" required="required" />
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-name">ふりがな＊<span class="c-form__required">必須</span></label>
+                <input class="c-form__input" id="field-name" placeholder="やまだ　はなこ" type="text" required="required" />
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-mail">メールアドレス＊<span class="c-form__required">必須</span></label>
+                <input class="c-form__input" id="field-mail" placeholder="aaaaa@gmail.com" type="email"
+                    required="required" />
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-mail">電話番号<span class="c-form__required">必須</span></label>
+                <input class="c-form__input" id="field-mail" placeholder="090-9999-9999" type="email"
+                    required="required" />
+            </div>
+            <div class="c-form__item">
+                <label class="c-form__label" for="field-message">お問い合わせ内容＊</label>
+                <textarea class="c-form__input" id="field-message" placeholder=""></textarea>
+            </div>
+            <div class="c-form__submit">
+                <button type="submit">送信する</button>
+            </div>
+
+            <div class="button">
+                <div class="contact_button"></div>
+                <p class="button_text">
+                    送信する
+                </p>
+            </div>
+
+
+        </form>
+        <footer id="footer">
+            <img class="footer_img" src="/Users/nozomi/Desktop/dezasuta/sakae_concept/images/AdobeStock_142762811.jpeg"
+                alt="footerimg">
+            <div class="footer_wrap">
+                <nav class="pc_footer_nav">
+                    <ul>
+                        <li class="footer_about"><a href="#about">about</a></li>
+                        <li class="footer_works"><a href="#works">works</a></li>
+                        <li class="footer_contact"><a href="#contact">contact</a></li>
+                        <li class="privacy"><a href="#privacy">プライバシーポリシー</a></li>
+                    </ul>
+                </nav>
+
+                <div class="sp_btn ">
+                    <span></span>
+                </div>
+                <!-- <nav class="sp_nav">
+                            <ul>
+                                <li><a href="#about">about</a></li>
+                                <li><a href="#works">works</a></li>
+                                <li><a href="#contact">contact</a></li>
+                            </ul>
+            
+                        </nav> -->
+            </div>
+        </footer>
+
+
+    </div>
+
+    </div>
 
 
 
