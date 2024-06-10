@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>コンセプトシート</title>
+    <link rel="stylesheet" href="https://use.typekit.net/cwg0thw.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header id="header">
+        <img class="logo_img" src="/Users/nozomi/Desktop/dezasuta/sakae_concept/images/logo.png" alt="logo">
         <div class="header_wrap">
             <nav class="pc_header_nav">
                 <ul>
@@ -55,7 +57,7 @@
             <h3>わたしのこと</h3>
         </div>
         <div class="about_img"></div>
-        <img class="pc_img" src="/Users/nozomi/Desktop/dezasuta/sakae_concept/images/1x/アセット 13.png" alt="">
+        <img class="pc_img" src="/Users/nozomi/Desktop/dezasuta/sakae_concept/images/1x/pc_profile_img.png" alt="">
         <!-- <img class="sp_img" src="/Users/nozomi/Desktop/sakae_concept/images/1x/アセット 14.png" alt=""> -->
 
         <div class="name">
@@ -68,20 +70,20 @@
         </h3>
         <p id="about_text" class="text">
             1994年生まれ。鹿児島県奄美大島出身、大阪市内で夫と息子２人と４人暮らし。<br>
-            小さな島で生まれ育ち、毎日のように海で泳ぎ、砂浜で大きな山やお城を作って遊ぶ日々を過ごしました。<br>
-            木登りが得意で高いところから眺める景色が大好きでした。幼少期は自然の中で遊びまわっていたので、<br>
-            周りにびっくりされるほど真っ黒に日焼けしていました。食べる事や料理も好きで、周りの人を食で笑顔に<br>
-            したいという思いから高校卒業後、栄養士を目指し１８年生まれ育った島を離れ大阪へ進学。卒業後は、<br>
-            栄養士として保育園や幼稚園で働き、食を通して子供達の成長をサポートしています。妊娠出産を経て、<br>
-            子育てしていく中で子供達には自分が好きなことを自分で選んで成長して欲しいと思った時、まずは自分が<br>
-            そうでないと、と思い元々興味があったWEBデザインに挑戦しようと思い2024年3月デザスタを受講。<br>
-            人との繋がりをとても大事にしている環境で育ったからこそデザインを通して思いや願いを繋げていくお手<br>
+            小さな島で生まれ育ち、毎日のように海で泳ぎ、砂浜で大きな山やお城を作って遊ぶ日々を過ごしました。
+            木登りが得意で高いところから眺める景色が大好きでした。幼少期は自然の中で遊びまわっていたので、
+            周りにびっくりされるほど真っ黒に日焼けしていました。食べる事や料理も好きで、周りの人を食で笑顔に
+            したいという思いから高校卒業後、栄養士を目指し１８年生まれ育った島を離れ大阪へ進学。卒業後は、
+            栄養士として保育園や幼稚園で働き、食を通して子供達の成長をサポートしています。妊娠出産を経て、
+            子育てしていく中で子供達には自分が好きなことを自分で選んで成長して欲しいと思った時、まずは自分が
+            そうでないと、と思い元々興味があったWEBデザインに挑戦しようと思い2024年3月デザスタを受講。
+            人との繋がりをとても大事にしている環境で育ったからこそデザインを通して思いや願いを繋げていくお手
             伝いができたらと思います。
         </p>
 
         <div class="profile">
-            <div class="profile_title">Profile</div>
-            <div class="profile_subtitle">【プロフィール】</div>
+            <h4 class="profile_title">Profile</h4>
+            <p class="profile_subtitle">【プロフィール】</p>
         </div>
         <ul id="profile_list">
             <li>所在地 ・・・・・・ 大阪市内</li>
@@ -89,10 +91,17 @@
             <li>事業内容 ・・・・・ Web制作におけるディレクション、デザイン、<br>
                 HTML・CSSコーディング、スマートフォンサイト</li>
         </ul>
+        <div class="profile_insta_img">
+            <!-- <img src="/Users/nozomi/Desktop/dezasuta/sakae_concept/images/Instagram_Glyph_White.png" alt=""> -->
+        </div>
+        <div class="profile_x_img">
+            <!-- <img src="/Users/nozomi/Desktop/dezasuta/sakae_concept/images/logo-white.png" alt=""> -->
+        </div>
+
 
         <div class="profile">
-            <div class="profile_title">Skill</div>
-            <div class="profile_subtitle">【スキル】</div>
+            <h4 class="profile_title">Skill</h4>
+            <p class="profile_subtitle">【スキル】</p>
         </div>
         <ul id="profile_list" class="skill">
             <li>・Illustrator</li>
@@ -138,8 +147,8 @@
                 <p class="box_subtitle">#LPデザイン</p>
             </div>
         </div>
-        <div class="button">
-            <div class="works_button"></div>
+        <div id="works_button">
+            <div class="button"></div>
             <p class="button_text">
                 もっと見る
             </p>
@@ -152,35 +161,35 @@
             <h2>Contact us</h2>
             <h3>お問い合わせ</h3>
         </div>
-    </div>
-    <div id="contact_text">
-        <p class="text">
-            「相談したい。」「話を聞いてみたい。」と思ってくださった方は<br>
-            下記メールフォームよりお問い合わせください。
-        </p>
-        <p class="contact_text">
-            以下のフォームに必要事項をご入力いただき、内容をご確認のうえ、<br>
-            送信ボタンを押してください。 ( ＊マークは必須項目です。)</p>
-
+        <!-- </div> -->
+        <div id="contact_text">
+            <p class="text">
+                「相談したい。」「話を聞いてみたい。」と思ってくださった方は<br>
+                下記メールフォームよりお問い合わせください。
+            </p>
+            <p class="contact_text">
+                以下のフォームに必要事項をご入力いただき、内容をご確認のうえ、<br>
+                送信ボタンを押してください。 ( ＊マークは必須項目です。)</p>
+        </div>
         <p class="contact_subtext">＊は必須項目となります。</p>
 
 
         <form class="c-form">
             <div class="c-form__item">
-                <label class="c-form__label" for="field-name">お名前＊<span class="c-form__required">必須</span></label>
+                <label class="c-form__label" for="field-name">お名前＊<span class="c-form__required"></span></label>
                 <input class="c-form__input" id="field-name" placeholder="山田 花子" type="text" required="required" />
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-name">ふりがな＊<span class="c-form__required">必須</span></label>
+                <label class="c-form__label" for="field-name">ふりがな＊<span class="c-form__required"></span></label>
                 <input class="c-form__input" id="field-name" placeholder="やまだ　はなこ" type="text" required="required" />
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-mail">メールアドレス＊<span class="c-form__required">必須</span></label>
+                <label class="c-form__label" for="field-mail">メールアドレス＊<span class="c-form__required"></span></label>
                 <input class="c-form__input" id="field-mail" placeholder="aaaaa@gmail.com" type="email"
                     required="required" />
             </div>
             <div class="c-form__item">
-                <label class="c-form__label" for="field-mail">電話番号<span class="c-form__required">必須</span></label>
+                <label class="c-form__label" for="field-mail">電話番号<span class="c-form__required"></span></label>
                 <input class="c-form__input" id="field-mail" placeholder="090-9999-9999" type="email"
                     required="required" />
             </div>
@@ -192,32 +201,32 @@
                 <button type="submit">送信する</button>
             </div>
 
-            <div class="button">
-                <div class="contact_button"></div>
+            <!-- <div id="contact_button">
+                <div class="button"></div>
                 <p class="button_text">
                     送信する
                 </p>
-            </div>
-
-
+            </div> -->
         </form>
-        <footer id="footer">
-            <img class="footer_img" src="/Users/nozomi/Desktop/dezasuta/sakae_concept/images/AdobeStock_142762811.jpeg"
-                alt="footerimg">
-            <div class="footer_wrap">
-                <nav class="pc_footer_nav">
-                    <ul>
-                        <li class="footer_about"><a href="#about">about</a></li>
-                        <li class="footer_works"><a href="#works">works</a></li>
-                        <li class="footer_contact"><a href="#contact">contact</a></li>
-                        <li class="privacy"><a href="#privacy">プライバシーポリシー</a></li>
-                    </ul>
-                </nav>
+    </div>
 
-                <div class="sp_btn ">
-                    <span></span>
-                </div>
-                <!-- <nav class="sp_nav">
+    <footer id="footer">
+        <img class="footer_img" src="/Users/nozomi/Desktop/dezasuta/sakae_concept/images/footer_img.jpeg"
+            alt="footerimg">
+        <div class="footer_wrap">
+            <nav class="pc_footer_nav">
+                <ul>
+                    <li class="footer_about"><a href="#about">about</a></li>
+                    <li class="footer_works"><a href="#works">works</a></li>
+                    <li class="footer_contact"><a href="#contact">contact</a></li>
+                    <li class="privacy"><a href="#privacy">プライバシーポリシー</a></li>
+                </ul>
+            </nav>
+
+            <div class="sp_btn ">
+                <span></span>
+            </div>
+            <!-- <nav class="sp_nav">
                             <ul>
                                 <li><a href="#about">about</a></li>
                                 <li><a href="#works">works</a></li>
@@ -225,8 +234,8 @@
                             </ul>
             
                         </nav> -->
-            </div>
-        </footer>
+        </div>
+    </footer>
 
 
     </div>
