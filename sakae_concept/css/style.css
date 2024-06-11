@@ -177,7 +177,7 @@ h3 {
     max-width: 52%;
     margin: 0 auto;
 }
-.pc_img {
+#about img {
     margin: auto;
     display: block;
     padding: 30px 0 30px 0;
@@ -245,12 +245,13 @@ h3 {
     margin: 0 auto;
     display: block;
     background: linear-gradient(to right, #3f8fca, #3fc8ca);
+    /* 乗算 */
     mix-blend-mode: multiply;
     max-width: 810px;
     margin-bottom: 80px;
     border-radius: 0 60px 0 60px;
-
     text-align: center;
+
     display: flex;
     align-items: flex-start;
     padding: 47px 8% 47px 5%;
@@ -282,7 +283,14 @@ h3 {
     align-items: center;
     margin: 0 auto;
     position: relative;
+
+    background: transparent;
+    border: none;
+    position: relative;
+    border-radius: 0;
+    z-index: 1;
 }
+
 .button_text {
     color: #ffff;
     font-size: 22px;
@@ -306,13 +314,6 @@ h3 {
 }
 .works_container {
     background: linear-gradient(to right, #3f8fca, #3fc8ca);
-    /* background-color: rgba(92, 68, 68, 1);
-    background-image: linear-gradient(
-        90deg,
-        rgba(63, 143, 202, 1) 10%,
-        rgba(63, 200, 202, 1) 40%
-    ); */
-    /* background-color: blue; */
     width: 30%;
     height: 280px;
     position: relative;
@@ -381,7 +382,7 @@ h3 {
     left: 31%;
 }
 .c-form {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
 }
 .c-form__item {
@@ -390,6 +391,7 @@ h3 {
     justify-content: space-evenly;
     margin-bottom: 20px;
 }
+/* 項目 */
 .c-form__label {
     text-align: left;
 }
@@ -400,14 +402,12 @@ h3 {
 .c-form__label {
     width: 90%;
 }
+/* 入力欄のbox */
 .c-form__input {
-    width: 90%;
+    width: 100%;
     font-size: 16px;
     border: solid 1px #333;
     border-radius: 4px;
-}
-.c-form__input:focus-visible {
-    outline: green auto 1px;
 }
 
 textarea.c-form__input {
@@ -419,21 +419,60 @@ textarea.c-form__input {
 }
 .btn_parts {
     background: linear-gradient(to right, #0054a7, #16234f);
-    /* background-color: blue; */
     width: 250px;
     height: 80px;
     border-radius: 40px;
     align-items: center;
-    margin: 0 auto;
+    text-align: center;
+    margin-top: 170px;
     color: #ffff;
     border: none;
     font-size: 20px;
     cursor: pointer;
+
+    background: transparent;
+    border: none;
+    position: relative;
+    border-radius: 0;
+    z-index: 1;
 }
+.btn_parts::before,
+.btn_parts::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.btn_parts::before {
+    background: linear-gradient(to right, #0054a7, #16234f);
+    /* border: 2px solid #ffb509; */
+    z-index: -1;
+}
+.btn_parts::after {
+    background: linear-gradient(to right, #0054a7, #16234f);
+    opacity: 0.5;
+    z-index: -2;
+}
+.btn_parts:hover::before {
+    background: transparent;
+}
+
+.btn_parts:hover::after {
+    top: 6px;
+    left: 6px;
+}
+
 .btn_parts:hover {
     background: transparent;
-    color: blue;
-    border: 2px solid blue;
+    color: white;
+    border-radius: 40px;
+    border: 2px solid linear-gradient(to right, #65fdf0, #1d6fa3);
 }
 .contact_us_button {
     background: linear-gradient(to right, #0054a7, #16234f);
@@ -446,7 +485,12 @@ textarea.c-form__input {
 }
 /*placeholderのスタイル*/
 .c-form__input::placeholder {
-    color: blue;
+    color: #1d2088;
+    /* 半透明 */
+    opacity: 0.5;
+}
+.c-form__submit {
+    margin-bottom: 190px;
 }
 @media (min-width: 640px) {
     .c-form__item {
@@ -475,12 +519,18 @@ textarea.c-form__input {
 
 /*----------フッター----------*/
 #footer {
-    margin-top: 190px;
     position: relative;
 }
-.footer_img {
+#footer img {
     max-width: 100%;
+    position: absolute;
+    mix-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
     position: relative;
+    top: 410px;
 }
 
 .pc_footer_nav {
